@@ -10,3 +10,7 @@ print(time(hour=13, minute=14, second=31))
 print(datetime(year=2020, month=1, day=31, hour=13, minute=14, second=31))
 
 print(f'With f-strings {date.today():%m/%d/%Y}')
+
+now = datetime.now()
+
+print(f'{now:%Y-%m-%d %H:%M}')
