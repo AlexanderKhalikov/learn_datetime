@@ -21,6 +21,6 @@ def daterange(start_date, end_date):
         yield start_date + timedelta(n)
 
 start_date = date(2013, 1, 1)
-end_date = date(2015, 6, 2)
+end_date = date(2013, 6, 2)
 for day_index, single_date in enumerate(daterange(start_date, end_date)):
     print(day_index, '-', single_date.strftime("%Y-%m-%d"))

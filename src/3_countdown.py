@@ -1,5 +1,10 @@
 from datetime import datetime
+import time
 
-DUE_DATE = datetime(year=2025, month=5, day=12, hour=8)
+DUE_DATE = datetime(year=2022, month=6, day=11, hour=5)
 countdown = DUE_DATE - datetime.now()
 print(f"Countdown to our wedding anniversary: {countdown}")
+
+while True:
+    print(DUE_DATE - datetime.now())
+    time.sleep(3)
